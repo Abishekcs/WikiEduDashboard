@@ -57,7 +57,7 @@ module WikiEduDashboard
     config.cache_store = :mem_cache_store, 'localhost', { pool_size: 5, expires_in: 7.days, compress: false, value_max_bytes: 1024 * 1024 * 4 }
 
     # Handle YAML safe loading of serialized Ruby objects
-    config.active_record.yaml_column_permitted_classes = [ActiveSupport::SafeBuffer, Symbol, BigDecimal, DateTime, Date, Time, ActiveSupport::TimeWithZone]
+    config.active_record.yaml_column_permitted_classes = [ActiveSupport::SafeBuffer, Symbol, BigDecimal, DateTime, Date, Time, ActiveSupport::TimeWithZone, ActiveSupport::TimeZone]
     # In config/application.rb
 
     config.action_dispatch.return_only_media_type_on_content_type = false
