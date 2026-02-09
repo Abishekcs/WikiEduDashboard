@@ -56,7 +56,7 @@ module WikiEduDashboard
     # Rails cache with Dalli/memcached
     config.cache_store = :mem_cache_store, 'localhost', { pool_size: 5, expires_in: 7.days, compress: false, value_max_bytes: 1024 * 1024 * 4 }
 
-    # Handle YAML safe loading of serialized Ruby objects
+    # Handle YAML safe loading of serialized Ruby objects test again
     config.active_record.yaml_column_permitted_classes = [ActiveSupport::SafeBuffer, Symbol, BigDecimal, DateTime, Date, Time, ActiveSupport::TimeWithZone, ActiveSupport::TimeZone]
 
     config.action_dispatch.return_only_media_type_on_content_type = false
