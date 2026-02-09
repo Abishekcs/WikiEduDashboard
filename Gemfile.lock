@@ -264,8 +264,9 @@ GEM
       guard (~> 2.1)
       guard-compat (~> 1.1)
       rspec (>= 2.99.0, < 4.0)
-    haml (5.2.2)
-      temple (>= 0.8.0)
+    haml (6.4.0)
+      temple (>= 0.8.2)
+      thor
       tilt
     haml-rails (3.0.0)
       actionpack (>= 5.1)
@@ -620,11 +621,11 @@ GEM
     stackprof (0.2.23)
     stringio (3.2.0)
     strscan (3.0.1)
-    temple (0.8.2)
+    temple (0.10.4)
     terrapin (1.0.1)
       climate_control
     thor (1.5.0)
-    tilt (2.0.10)
+    tilt (2.7.0)
     timeout (0.6.0)
     tsort (0.2.0)
     tzinfo (2.0.6)
