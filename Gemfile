@@ -1,14 +1,16 @@
 source 'https://rubygems.org'
-ruby '3.1.2'
+ruby '3.4.8'
 
 ### Basic Framework
-gem 'rails', '7.2.0'
+gem 'rails', '8.0.0'
 gem 'jbuilder' # DSL for building JSON view templates
 gem 'haml-rails' # HTML template language, used instead of ERB
 gem 'bootsnap', require: false # Makes rails boot faster via caching
 gem 'faker', require: false # Generates random data for example records
 gem 'figaro' # easy access to ENV variables. Deprecated.
 gem 'puma'
+gem 'observer' # Observer library (required for Ruby 3.1+ as it's no longer in standard library)
+gem 'csv'
 
 ### Database and caching
 gem 'mysql2' # MariaDB integration for ActiveRecord
