@@ -1,8 +1,6 @@
 import '../testHelper';
 import CourseDateUtils from '../../app/assets/javascripts/utils/course_date_utils';
 
-jest.spyOn(console, 'log').mockImplementation(() => {});
-
 // As of 2016-01-28, this matches the spec data for CourseMeetingsManager
 // There are sixteen non-blackout weeks.
 const typicalCourse = {

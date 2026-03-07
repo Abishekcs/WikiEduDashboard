@@ -14,8 +14,6 @@ import {
 } from '../../app/assets/javascripts/constants';
 import '../testHelper';
 
-jest.spyOn(console, 'error').mockImplementation(() => {});
-
 describe('revisions reducer', () => {
   // Get initial state from reducer (it includes a dynamic date)
   const initialState = revisions(undefined, {});

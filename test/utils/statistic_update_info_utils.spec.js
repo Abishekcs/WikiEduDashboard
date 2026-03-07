@@ -1,8 +1,6 @@
 import '../testHelper';
 import { getLastUpdateMessage, getFirstUpdateMessage, firstUpdateTime, lastSuccessfulUpdateMoment, nextUpdateExpected, getLastUpdateSummary, getTotaUpdatesMessage, getUpdateLogs } from '../../app/assets/javascripts/utils/statistic_update_info_utils';
 
-jest.spyOn(console, 'error').mockImplementation(() => {});
-
 describe('firstUpdateTime', () => {
   test(
     "calculates first update start time based on time course enqued for update and queue's latency",
