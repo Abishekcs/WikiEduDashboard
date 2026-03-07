@@ -1,6 +1,8 @@
 import '../testHelper';
 import CourseDateUtils from '../../app/assets/javascripts/utils/course_date_utils';
 
+jest.spyOn(console, 'log').mockImplementation(() => {});
+
 // As of 2016-01-28, this matches the spec data for CourseMeetingsManager
 // There are sixteen non-blackout weeks.
 const typicalCourse = {
@@ -109,7 +111,7 @@ describe('CourseDateUtils.formattedDateTime', () => {
   test('returns a datetime string with timezone if showTime is true', () => {
     const input = new Date(2016, 10, 19, 17, 15, 14);
     const output = CourseDateUtils.formattedDateTime(input, true);
-    expect(output).toContain(['2016-11-19 17:15']);
+    expect(output).toContain('2016-11-19 17:15');
   });
 });
 
